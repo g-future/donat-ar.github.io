@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kursus Stir LPK Arum Kota Tegal</title>
+    <style>
+        /* Gaya umum untuk body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s;
+        }
+
+        /* Gaya untuk kontainer utama */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Gaya untuk heading */
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+
+        /* Animasi mengetik teks */
+        .title {
+            display: inline-block;
+            font-size: 2rem;
+            color: #4CAF50;
+            opacity: 0;
+            animation: fadeInText 1.5s forwards;
+        }
+
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Gaya untuk paragraf */
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* Gaya untuk box info */
+        .info-box {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-top: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .info-box.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .info-box h3 {
+            color: #4CAF50;
+        }
+
+        .info-box ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .info-box ul li {
+            padding: 5px 0;
+            font-size: 16px;
+        }
+
+        .info-box ul li i {
+            color: #4CAF50;
+            margin-right: 10px;
+        }
+
+        /* Gaya untuk nomor kontak */
+        .contact-info {
+            margin-top: 30px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        /* Gaya untuk button */
+        .button {
+            display: block;
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        /* Animasi untuk fade-in effect pada konten */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Gaya untuk efek animasi ketika element muncul di layar */
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title" class="title"></h1>
+        <p>Ingin menguasai keterampilan menyetir dengan cepat dan aman? Daftar sekarang di LPK Arum Kota Tegal dan mulai perjalananmu!</p>
+        
+        <div class="info-box fade-in">
+            <h3>Informasi Kursus</h3>
+            <ul>
+                <li><i class="fa fa-check-circle"></i> Lokasi: LPK Arum, Kota Tegal</li>
+                <li><i class="fa fa-check-circle"></i> Pengajaran dari instruktur berpengalaman</li>
+                <li><i class="fa fa-check-circle"></i> Kursus untuk semua level: Pemula hingga Mahir</li>
+                <li><i class="fa fa-check-circle"></i> Fasilitas lengkap & kendaraan yang terawat dengan baik</li>
+            </ul>
+        </div>
+
+        <div class="contact-info">
+            <p>Hubungi kami untuk info lebih lanjut:</p>
+            <p><strong>📞 +62 858-6500-2096</strong></p>
+        </div>
+
+        <a href="tel:+6285865002096" class="button">Hubungi Sekarang</a>
+    </div>
+
+    <!-- Menyertakan file JavaScript -->
+    <script src="kursus-stir.js"></script>
+</body>
+</html>
